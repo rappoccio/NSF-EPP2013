@@ -39,8 +39,7 @@
 
 \begin{document}
 
-\title{CAREER :\\Boosting through the hierarchy at the Large Hadron
-  Collider }
+\title{High Energy Physics Research at the CMS Experiment }
 
 % >> Authors
 \author{Salvatore Rappoccio, PhD.}
@@ -48,27 +47,61 @@
 % >> Date
 \date{\today}
 
+
+
+
 \maketitle
 
-\section{Objective}
-The objective of this research proposal is to perform searches for
-solutions to the apparent discrepancy between the Higgs mass and the
-Planck scale (known as the ``hierarchy problem'' of the standard model
-(SM)) that result in signatures containing highly Lorentz-boosted top
-quarks. This research will be done at the Compact Muon Solenoid (CMS)
-experiment at the Large Hadron Collider (LHC)~\cite{:2008zzk}. To
-accomplish this objective, it is necessary to use new
-techniques involving jet substructure and mass known generally as
-``boosted jets'', or as ``boosted tops'' in the case of top quarks. 
+\abstract{
+The first run of the Large Hadron Collider (LHC) in Geneva,
+Switzerland has
+completed with resounding success after the discovery of a Higgs boson
+at 125 GeV. This particle is expected to break the symmetry between
+the electroweak and electromagnetic scales of interactions. However,
+with this new discovery, new questions immediately arise. It was
+expected that in addition to the solution to electroweak symmetry
+breaking, the first run of the LHC would also shed light onto the
+question of why the electroweak scale is so much different from the
+Planck scale (the hierarchy problem). No such information was
+observed, however, and so the
+continuation of the LHC program is critically important to our
+understanding of nature at the smallest scales. 
 
-In addition, this proposal outlines an innovative strategy for
-educating young people and the general public, through public events
-in ``Plain English'', as well as the development of a Mobile
-Application that teaches particle physics to younger students in an
-entertaining way. 
+This proposal focuses on finding solutions to the hierarchy problem
+using novel reconstruction techniques to reconstruct
+highly-boosted standard model particles such as top quarks, $W/Z$ and
+Higgs bosons. The principle investigator (PI) has played a critical
+role in bringing these techniques to deployment, and will continue to
+do this in the future. 
+
+To accomplish this goal, it is necessary to fully utilize, the
+particle flow reconstruction algorithm at CMS. More generally,
+particle flow been a
+resounding success in the discovery of the Higgs boson at 125 GeV, and
+also in the myriad of searches in the first run of the LHC for
+supersymmetric and other exotic models beyond the standard model. The
+proposed research will bring the particle flow algorithm into the next
+runs of the LHC, based on the extensive previous experience of the PI
+that has been gained in the past.  
+
+In addition to these tasks, the proposed research will also contribute
+to commissioning and operations of the pixel detector at CMS. 
+
+}
 
 
-To accomplish these goals, Prof. Rappoccio's group consists
+\section{Introduction}
+
+Prof. Salvatore Rappoccio (tenure-track Assistant Professor) joined
+the Faculty at the University at Buffalo, SUNY (UB) in 2012. The UB
+group has an NSF grant (Award Number 1205960, July 15th 2012 - June
+30th 2015) from Professors Kharchilava and Iashvili, however this was
+renewed one year before Prof. Rappoccio joined the Faculty and does
+not provide support for him or his group. 
+
+
+
+Prof. Rappoccio's group consists
 of Dr. James Dolen (postdoctoral fellow), Mr. Joshua Kaisen and Ms. Maral Alyari
 (graduate students), Mr. Brendan Smith and Mr. Jonathan Goodrum (undergraduate
 students, the latter supported under the ``Collegiate Science and
@@ -76,11 +109,18 @@ Technology Program'' (CSTEP)
 at UB, which provides research funding for minority and
 disadvantaged undergraduate students). Work has already started
 on the proposed research using short-term startup funds. 
+These startup funds will run out by 30-June-2014. If no funding is
+found, the support for Dr. Dolen, Mr. Kaisen, and Ms. Alyari will run
+out, and they will not be able to continue their studies. 
+
+The larger UB group consists of Profs. Kharchilava and Iashvili, two
+postdoctoral fellows, Dr. Ashish Kumar and Dr. Supriya Jain, and three
+Ph.D. students, Mr. Joseph Zennamo, Mr. Andrew Godshalk, and Mr. Jimin
+George. Prof. Rappoccio's group has already commenced collaboration
+with the teams of Kharchilava and Iashvili, specifically in the pixel
+detector commissioning. 
 
 
-
-
-\section{Motivation}
 
 With the discovery of a 
 standard model (SM)-like Higgs boson at
@@ -121,30 +161,13 @@ manifold (or ``brane''). ED models typically involve
 Kaluza-Klein (KK) excitations of known particles, and KK gluons in
 particular typically decay into $\ttbar$ pairs. 
 One common feature of both of these models is the presence of top
-quarks in the final state. 
+quarks in the final state which are often highly Lorentz boosted. 
 
 
-To gain intuition into the kinematics of highly-Lorentz boosted top
-quarks that decay into all-hadronic final states, consider
-a highly-energetic particle
-of mass $m$ which decays into two massless particles. The angular
-distance between the two particles is given by 
-$\Delta R \approx 2 / \gamma$, where $\gamma = E/m$ is the
-Lorentz boost of the particle. 
-For $\gamma > 3$, the angular separation
-between the two decay products is less than 0.7, and thus, if
-they decay hadronically,
-the resulting decay products would be clustered into a 
-single jet with traditional
-jet-clustering techniques, which assume that the original partons
-are separated by more than 0.7. Hence, traditional
-techniques inadvertently remove events with $\gamma > 3$ from
-consideration entirely. 
 
-However, new jet-clustering techniques have been developed to handle
-the cases for $\gamma > 3$, where the resulting jets from top-quark
-decays overlap in the
-detector~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetpruning2,nsub,heptoptagger,trimming}.
+In recent years, new jet-clustering techniques have been developed to handle
+highly-boosted SM particles including top
+quarks~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetpruning2,nsub,heptoptagger,trimming}.
 Summaries of these techniques are in Refs.~\cite{boost2010,boost2011}.
 These
 large jets are referred to as 
@@ -157,7 +180,7 @@ These algorithms
 analyze the substructure and mass
 of the boosted jet to break it up into smaller ``subjets'' which can be
 analyzed at angular scales smaller than 0.7, thereby allowing analysis
-of states with $\gamma > 3$. Figure~\ref{boostedtop_eventdisplay}
+of highly-boosted states. Figure~\ref{boostedtop_eventdisplay}
 shows an event display of such a highly-boosted top quark at CMS. 
 The blue rectangles represent the
 energy measured in the hadronic calorimeter, the green
@@ -215,72 +238,6 @@ Run 1 of the LHC. For instance, for a KK gluon with a mass of 2
 better than the sensitivity without using these techniques. This
 improvement grows even larger with the mass of the KK gluon. 
 
-In Run 2 and beyond, using these boosted techniques will be even more
-necessary to discover (or exclude) such particles that have
-top quarks in the final states. For instance, the same KK gluon
-model is expected to be excluded up to roughly 5 \TeVcc, where the top
-quarks will have a Lorentz boost of $\sim\gamma=14$, in which the decay
-products from the top quark will have $\Delta R < 0.14$
-radians. Another example is top squark pair production, in
-which case the kinematic limits are expected to be roughly $\sim$ 1
-\TeVcc. In this case, the top quarks in the final state will have a
-Lorentz boost of $\sim\gamma=6$, with the decay products falling
-within $\Delta R < 0.35$. 
-
-
-
-
-
-
-In summary, in order to explore the full phase space of interesting
-solutions to the hierarchy problem, it will be critical to utilize
-boosted-jet techniques. In particular, searches for $\ttbar$
-resonances (such as the RS KK gluon) or sequential decays to the top
-quark (such as the top squark) will not be successful unless
-boosted-jet techniques are utilized. 
-
-
-
-\section{CAREER Project Plan}
-
-The searches outlined in this proposal use the boosted-jet
-techniques developed during
-Run 1 to search for
-BSM physics in signatures containing one or more highly-boosted
-top quarks that decay into all-hadronic final states
-during Run 2 and Run 3 of the LHC. 
-
-Despite an established physics program that Prof. Rappoccio has pioneered at CMS in
-the area of boosted jets during Run 1, in order for the proposed
-research program to be realized in Run 2 and beyond, major development
-of the techniques must be done in order for them to continue functioning. 
-These innovations must be reestablished in
-an environment with an upgraded CMS detector, with an enormous
-amount of instantaneous luminosity, resulting in many events
-overlapping in the detector at once, or ``pileup''. For instance, in
-Run 1 of the LHC, typically 20 pileup interactions occurred per beam
-crossing. In Run 2, this will increase to 50. In Run 3,
-the number of pileup events per beam crossing will be 140. The median
-amount of energy that is produced from pileup in a solid angle
-$d\Omega$ is approximately 0.8-1 \GeVc/radian$^2$/interaction. With 140
-interactions, the amount of energy near a jet is approximately 100-140
-\GeV, comparable to the interesting range of the underlying collision
-already. 
-
-Dealing with these two technical challenges will require the full
-suite of
-tools developed in the past to accomplish this daunting task, in new
-and innovative ways. There are several challenges that must be met to
-achieve this goal. The first is algorithmic development of the
-boosted-jet algorithms 
-themselves~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetpruning2,trimming,nsub}. 
-The second is the updating of the particle-flow algorithm
-(PF)~\cite{particleflow}, upon which these boosted-jet techniques
-heavily rely at CMS. 
-The third is development and quality monitoring of reconstruction and
-triggering strategies for boosted jets. 
-
-These are now discussed in turn. 
 
 \subsection{Boosted Jet Algorithms}
 
@@ -336,6 +293,13 @@ and deployable strategies can be developed prior to the startup of Run
       interactions after applying the jet trimming technique (open
       magenta histogram).}
 \end{figure}
+
+
+\subsection{BSM Searches with Boosted Jets}
+\label{sec:bsm}
+
+\subsection{SM Measurements with Boosted Jets}
+\label{sec:topxs}
 
 
 \subsection{Particle Flow}
@@ -444,16 +408,20 @@ thereby ensuring the safety of the physics program proposed here.
 
 
 
+\subsection{Forward Pixel Detector Commissioning and Operations} 
 
 
 
-\section{Prior Work with Boosted Objects}
+
+\section{Prior Work}
 
 \subsection{CMS Activities}
 
 Prof. Rappoccio has played a critical leading role in implementing and
 understanding these jet substructure and boosted techniques at the LHC
-in general, and is the foremost expert of this topic at CMS.
+in general, and became the foremost expert of this topic at CMS while
+a postdoctoral fellow at Johns Hopkins University working under NSF
+Grant 1100862 and earlier. 
 His early studies (before collision data) and
 implementation of the algorithms are outlined in
 Ref.~\cite{catop_cms}. He has authored the first searches
@@ -518,6 +486,13 @@ participated in the software validation and
 data-quality monitoring (DQM) of the jets at CMS before and during the
 Run 1 startup commissioning at 2.36 and 7 \TeV. 
 
+Furthermore, Prof. Rappoccio's group has participated in the larger UB
+activities of FPIX commissioning and testing during the first year of
+his position. Dr. Dolen and Dr. Kumar developed tests for the FPIX
+modules using a probe station at Fermilab, leading a team of graduate
+and undergraduate students after severe budgetary constraints at
+Fermilab descoped much of the project. 
+
 
 \subsection{Non-CMS Activities}
 To highlight the importance of this project, the SnowMass effort
@@ -534,59 +509,18 @@ conference reports in 2010 and 2011 are used as standard references in
 benchmarking these techniques~\cite{boost2010,boost2011}.
 
 
+As a graduate student at Harvard University, Rappoccio also performed
+major updates and modifications of the Silicon Readout Controller
+(SRC) for the CDF experiment at Fermilab. These developments allowed
+the readout of the silicon detector at Level 1 of the CDF triggering
+system, which then could be passed to a tracking algorithm at Level
+2. This made the extensive $B$-physics program at CDF possible, since
+without these track triggers, the quality of results would have been
+severely degraded. 
+
 
 \clearpage
-\section{Timeline}
-\label{sec:timeline}
 
-\begin{description}
-\item[Phase I - LHC Shutdown and CMS Upgrade (2013-2014): ] At the
-  completion of analysis of the 8 \TeV\ run of the
-  LHC in 2012, we have performed searches using these techniques that
-  have not discovered new physics. However, as described above, an
-  enormous amount of development must be done to ensure that CMS is
-  prepared for Run 2, and in particular to ensure that the boosted-top
-  algorithms perform optimally. During the
-  shutdown period between Runs 1 and 2, significant amounts of work
-  will be done to develop the algorithms to their optimum capacity, to
-  ensure that the particle-flow algorithm is performing correctly, and
-  to mitigate pileup as much as possible. Dr. Dolen, Mr. Kaisen,
-  and Ms. Alyari will continue their work on boosted-jet algorithms,
-  particle-flow algorithm development, triggering development, and
-  data-quality monitoring.
-
-\item[Phase II - LHC Run 2 (2015?-2017?)] The increase of the center-of-mass
-  energy from 8 \TeV\ to 13-14 \TeV\ will dramatically increase the
-  reach of searches for new particles decaying to boosted top
-  quarks. During the startup of the LHC, the particle flow and DQM
-  projects outlined above will be in full operation and used for
-  commissioning the new detector in new beam conditions. 
-  As the data are collected at 13-14 \TeV, the searches proposed here
-  will be at the very
-  center of any discoveries involving top quarks. During this period,
-  major publications will involve searches for $\ttbar$ resonances and
-  $t+b$ resonances, as well as searches for supersymmetric top squarks. 
-
-\item[Phase III - LHC Shutdown and CMS Upgrade (2017?-2019?)] The
-  feasibility and timeline of the high-luminosity LHC (HL-LHC) is
-  still very much in flux. There are, however, good
-  theoretical reasons to expect that the hierarchy problem will be
-  better understood by this period. 
-  In any case, the techniques developed in the
-  previous Phases of this proposal will be highly-applicable in an
-  environment with enormous amounts of pileup. Should the solution to
-  the hierarchy problem continue to elude us after Run 2, the
-  techniques we develop will still allow for
-  the further examination of the hierarchy problem with large amounts
-  of integrated luminosity (at the cost of higher pileup). In
-  order to maintain efficacy, continual improvements must be made to
-  boosted-jet searches to ensure that the increased pileup will not
-  pose a dramatic threat to the goals of the program. By using
-  advanced techniques, the pileup problem can be significantly
-  mitigated, as shown above. 
-
-
-\end{description}
 
 \clearpage
 \section{Outreach and education}
@@ -598,16 +532,13 @@ part of the responsibility of scientists is to educate the next
 generation effectively. There is already extensive work being done to
 educate high school-level students and teachers via the {\em QuarkNet}
 program (in which UB participates in), however there is
-very little in the way of educating younger people and the general
+very little in the way of educating the general
 public. 
 The plan outlined in this proposal will engage the broader
 public in discussions of major results in particle
 physics, as well as to enliven particle physics for young students. 
-This will be implemented based on two programs: (a) public events such
-as the ``HiggsFest''~\cite{higgsfest} that Prof. Rappoccio organized at UB,
-and (b) to develop a Mobile Application which aims to educate
-young people about particle physics in an entertaining way. 
-
+This will be implemented based on similar events as the
+``HiggsFest''~\cite{higgsfest} that Prof. Rappoccio organized at UB. 
 
 \subsection{Higgsfest and other public events}
 
@@ -671,151 +602,6 @@ Buffalo.
 %area's ``Science Cabaret''~\cite{cabaret} which intends to discuss
 %science and art in a very informal and relaxed setting. 
 
-\subsection{Mobile Application for particle physics outreach}
-
-Although ``smart phones'' are nearly ubiquitous, precious few
-quality mobile applications exist for physics education of elementary,
-middle, and high school-age students that are free of charge, and few
-applications exist for particle physics at all. Reaching this younger
-generation of students means
-that we, as educators, must be able to communicate with them on their
-own level. A mobile application that is capable of capturing the
-imaginations and interest of young people will be a valuable tool in
-order to educate them about particle physics. This is similar to the
-NSF-funded project ``Quarked!''~\cite{quarked},
-also designed for younger-aged students. The current proposal will be
-similar but complementary to this project, with the innovation here
-being that the actual rules of the game that the students are playing
-are the rules of particle physics, and hence they will be learning the
-physics as they learn to play the game itself. This will even allow
-the analysis of how much the players are learning by how well they do
-in the games. 
-
-In addition, this could be used in the extensive
-``Physics and Arts Exhibition'' at the Physics Department at UB, or at
-the ``Science and Art Cabaret''~\cite{cabaret}, also partially
-organized by the Physics Department. 
-
-
-The mobile application will be
-downloaded by users free of charge, and will provide several choices
-of games to play based on particle physics. 
-For instance, one game will be a two-dimensional ``puzzle'' game
-(similar to, for instance, ``Simple Physics''~\cite{simplephysics})
-which will involve the player arranging Feynman diagrams with
-multi-touch finger gestures.
-Another will be a ``proton collision'' game where the players
-``shoot'' protons at each other in a targeting game (similar to
-``Angry Birds''~\cite{angrybirds}). 
-The app will have educational lessons ``pop up'' to teach
-the users about the fundamental physics involved in a simple way. For
-instance, the Feynman diagrams could provide information about the
-quarks, leptons, bosons, and particles beyond the SM, and the
-accelerator game could show how electric
-and magnetic fields are used in accelerators. 
-
-\iffalse
-For illustrative purposes,
-Fig.~\ref{fig:storyboard_summary_quarkkids} shows a skeleton
-``storyboard'' for one particular lesson that could be done, to teach
-children about the quantum electrodynamics of electrons. 
-The student
-will be instructed about the possible ``diagrams'' (phrased in a way
-that they can relate to), and asked to solve Feynman diagram
-``puzzles'' based on the rules. The
-student will then be presented with an incomplete diagram and some
-possible options to complete it. They will then drag 
-one of the possible pieces into the field of the
-Feynman diagram to complete the puzzle, and their score can be based
-on the number of completed diagrams. If the user needs a hint, it will
-be available for a cost of ``points''. This could be linked into actual
-event displays of LHC or LEP events so that the student could see them
-directly in the data. 
-\fi
-
-In addition to educating students, this tool
-could also be used
-as an interactive part of the public outreach events described above,
-giving the participants a concrete ``take-home message'', which can be
-used by teachers to continue the educational components, etc, thereby
-increasing the efficacy of both programs. 
-
-\iffalse
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=100mm]{storyboard_summary_quarkkids}
-    \caption{\label{fig:storyboard_summary_quarkkids}Example
-      ``storyboard'' for a mobile application aimed at teaching
-      students particle physics. }
-\end{figure}
-\fi
-
-
-The approach of using such video games for educational purposes is a
-relatively new concept, with the aim of capturing
-the imagination of students while instructing them. For instance, the
-popular game ``SimCity''~\cite{simcity} has a new version released under GlassLab,
-Inc. called ``SimCityEDU''~\cite{simcityedu}, as featured in 
-{\bf USA Today}~\cite{simcityedu_usatoday}. Such developments have
-prompted such philanthropic giants such as the ``Bill and Melinda
-Gates Foundation''~\cite{gates}
-and the ``John D. and Catherine T. MacArthur
-Foundation''~\cite{macfound} to begin programs to educate young people
-with video game and other online technologies, as well as
-government-sponsored projects such as the NSF programs ``Computing
-Education for the 21st Century'' (CE21) and ``Innovative Technology
-Experiences for Students and Teachers'' (ITEST). Subsequent to
-this grant, these are all viable avenues of long-term support for
-this project.
-
-
-Since this is such a new approach, it has not yet
-obtained universal acceptance as an effective method of education. To
-address this, the mobile
-application will natively allow the gaming system to collect
-information about how quickly students are learning concepts in the
-educational components by evaluating how well they perform in the game
-itself. This information can tell how many times students are
-accessing information to learn about the topic, how many iterations it
-takes for them to understand the concepts, etc. For instance, data
-will be collected on the number of tries that
-a user attempts to create a given Feynman diagram, or how often they
-have to resort to hints to solve their puzzles. With an online
-agreement (see below), Prof. Rappoccio could collect these data remotely and analyze
-their efficacy. This information could also be used in publications or
-in reports of the efficacy of video gaming technology in educational
-systems, something that may be of interest to the aforementioned
-foundations and other organizations, including the NSF. 
-
-In order to collect this information, since the program is targeted
-for younger audiences, it will be necessary to comply with the
-``Children’s Online Privacy Protection Act (COPPA)''~\cite{coppa}. 
-The proposed software will not collect any information related to
-identification of the students or parents involved at all (as defined
-by the terms of COPPA), and only the scores and the ages of the
-students will be collected, upon consent of the parent before the
-application is downloaded. There will be an End Users's License
-Agreement which outlines what data are collected (scores and ages of
-the students), and only upon permission. It will still be possible to
-use the application if the parent chooses not to collect the scores,
-upon which the collection of scores will be disabled. 
-
-The general support to develop such a mobile application is, at this
-stage, very advanced already. The software in this proposal will use
-the ``Kivy''  {\tt python}-based
-framework~\cite{kivy} to develop cross-platform two-dimensional games
-that can be packaged and bundled for a multitude of environments,
-including Windows, Mac OS X, Android, and iOS~\cite{kivy}. This
-platform requires very little extensive knowledge in graphics design
-or mobile application development, with open-source
-community support and a plethora of examples. Prof. Rappoccio has
-around 5 years of experience in {\tt python} programming, as well as 3
-years of experience designing Graphical User
-Interfaces (GUIs). It is very simple to create two-dimensional games
-with this platform, and this is the preferred technology to
-utilize. It will also encourage open-source modification so, if the
-idea takes hold, people can create their own modifications to the game
-itself with minimal programming experience and efforts. 
 
 
 \subsection{Undergraduate research}
@@ -845,6 +631,8 @@ planned to continue supporting undergraduate students in such hands-on
 activities at CERN next year under the NSF Cooperative Agreement that is
 under review at the present time, discussed in the ``Current and
 Pending Support'' section below (Proposal Number 7334626). 
+Mr. Smith is also currently completing an undergraduate honor's thesis
+under the direction of Prof. Rappoccio. 
 
 \section{Prior Work in Education and Outreach}
 
@@ -923,19 +711,17 @@ boosted-jet techniques will be absolutely critical to ensure that the
 techniques are as successful in Run 2 as they were in Run 1, amidst a
 sea of technical challenges. 
 
-In addition to this ground-breaking research, a broad
-spectrum of outreach and educational activities is proposed. Foremost
-amongst
-these are events such as successors to ``Higgsfest'' in the Buffalo
+In addition to this ground-breaking research, an addition to the
+extensive outreach at UB is proposed in
+events such as successors to ``Higgsfest'' in the Buffalo
 area (including lower-income places that have limited access to
-suburban venues), as well as the development of a Mobile Application
-to instruct students about particle physics in an interactive way. 
+suburban venues). 
 
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {A--\arabic{page}}
 
-\bibliography{rappoccio2012}{}
+\bibliography{rappoccio2013}{}
 \bibliographystyle{unsrt}
 
 \newpage
@@ -953,34 +739,16 @@ to instruct students about particle physics in an interactive way.
 {\bf Personnel}
 \bigskip
 
-Salvatore Rappoccio (tenure-track Assistant Professor) joined the
-Faculty at the University at Buffalo, SUNY (UB) in 2012. The UB group
-has an
-NSF grant (Award Number 1205960, July 15th 2012 - June 30th 2015) from
-Professors Kharchilava and Iashvili, however this
-was renewed one year before Prof. Rappoccio joined the Faculty and does not
-provide support for him or his group. 
 
-Prof. Rappoccio's group is currently supported on his startup funds,
-which will run out by 30-June-2014. If no funding is found, the
-support for Dr. Dolen, Mr. Kaisen, and Ms. Alyari will run out, and
-they will not be able to continue their studies. 
-
-
-\bigskip
-
-
-The requested funds of \$869,953 USD (for 5 years starting in 2014)
+The requested funds of \$XXXXX USD (for 3 years starting in 2014)
 would cover two (2) months of summer salary for Prof. Rappoccio per
-year for five (5) years
-(\$82,686), the full salary for 
-one (1) postdoctoral fellow, Dr. James Dolen (\$218,570) for five (5)
+year for three (3) years
+(\$XXX), the full salary for 
+one (1) postdoctoral fellow, Dr. James Dolen (\$XXX) for three (3)
 years, and salary plus
 tuition for two (2) graduate students, one in-state (Joshua
-Kaisen) and one out-of-state (Maral Alyari), totaling \$156,121 in
-salary and \$21,281 in tuition. 
-It is anticipated that Kaisen and
-Alyari will graduate around the end of this proposal.
+Kaisen) and one out-of-state (Maral Alyari), totaling \$XXXX in
+salary and \$XXXX in tuition. 
 
 
 \bigskip
@@ -991,7 +759,7 @@ This research will require significant travel to CERN to participate
 in CMS meetings for Prof. Rappoccio. Additionally, this will cover
 travel costs for Dr. Dolen, Mr. Kaisen and Ms. Alyari for relocation
 to Fermilab or CERN. 
-Hence, the proposal requests \$32,498 in travel funds for the five
+Hence, the proposal requests \$XXXX in travel funds for the three
 years of activity. 
 
 \bigskip
@@ -1002,7 +770,7 @@ The above figures carry an indirect cost
 percentage of 26\% for Dr. Dolen, Mr. Kaisen and Ms. Alyari as they
 will not be located at the UB campus. The indirect cost
 for Rappoccio's summer salary is 56\%, because he is located at the
-UB Campus. The total indirect cost is \$224,648.
+UB Campus. The total indirect cost is \$XXXXX.
 
 Below is a year-by-year summary of the funding request. 
 
@@ -1013,13 +781,16 @@ Below is a year-by-year summary of the funding request.
 
 In the first year, Dr. Dolen will perform studies of the
 boosted-top analyses at CMS to ensure that they will be
-deployable in a very early timescale in Run 2. 
+deployable in a very early timescale in Run 2. In addition, he is
+responsible for testing and commissioning of the FPIX
+modules. 
 
 Mr. Kaisen will continue his work on adapting the particle-flow
 algorithm to work in the upgraded detector geometries in the Phase 1
 and Phase 2 upgrades of CMS. He is expected to finish his classes in
 the Spring Semester, 2014, and will move to Fermilab for 1-2 years,
-after which time he will move to CERN. 
+after which time he will move to CERN. At Fermilab he will partake in
+further testing and commissioning of the FPIX modules. 
 
 Ms. Alyari will primarily focus on data-quality monitoring of the jet
 reconstruction and jet substructure algorithms. She is expected to
@@ -1027,8 +798,6 @@ finish her classes in the Fall Semester, 2013, and will move to
 Fermilab for 1-2 years. She is expected to stay at Fermilab for the
 remainder of her graduate studies. 
 
-It is also expected that the baseline infrastructure for the Mobile
-Application described above will be developed. 
 
 
 \bigskip
@@ -1048,7 +817,7 @@ tuning. Since this is a period of high activity, it
 will be necessary to have a high presence of the group at CERN, and
 as such, it is expected that Dr. Dolen and
 Mr. Kaisen will have relocated there to partake in commissioning
-activities. 
+activities and in operations for the FPIX detector. 
 Ms. Alyari will be located at FNAL during this period. At FNAL, it is
 expected that she will contribute heavily via the {\em Remote
   Operations Center} (ROC) at FNAL in the jet DQM.
@@ -1064,9 +833,7 @@ luminosity at high-$x$ will mean that striking BSM signatures could be
 seen very early. 
 
 Since this is the year that the LHC startup will occur, 
-the first public outreach event will be presented. A working version
-of the Mobile Application is expected to be functional at the same
-time to deploy during the event. 
+the first public outreach event will be presented. 
 
 \bigskip
 \bigskip
@@ -1076,7 +843,9 @@ time to deploy during the event.
 
 It is expected that the Run 2 LHC will be fully
 operational in year three of this proposal, and readily collecting
-collision data for physics analysis. 
+collision data for physics analysis. Dolen and Kaisen will be fully
+engaged in the pixel commissioning as well as data analysis. Alyari
+will be performing DQM support and shifts.
 
 As the data are collected, it will be absolutely imperative to have
 the boosted-jet algorithms deployed and characterized as well as
@@ -1093,71 +862,6 @@ detector, and to be ready for startup again for Run 3. The work of
 Mr. Kaisen and Ms. Alyari will be imperative to the successful usage
 of the Phase-1 upgraded detector in collisions. 
 
-\bigskip
-\bigskip
-{\bf \Large Year Four (1-June-2017 -- 31-May-2018)}
-\bigskip
-
-In year four of this proposal, it is expected that the full Run 2
-dataset will be finalized, and the second long shutdown (``LS2'') of
-the LHC will be ongoing. The BSM analyses of boosted
-jets should be close to finalized at that point, with preliminary results
-and possibly a publication, on the discovery of new physics (if
-found), or on severe limits of possible BSM scenarios. 
-
-The rest of the CMS Phase 1 upgrades will also be completed during
-this time. Another tuning of the PF algorithm will be necessary to
-cope with the changing detector conditions. 
-
-It is expected that Dr. Dolen will play a leading role in the
-experiment during this time. He should also be investigating the
-possibility of faculty positions to further his academic career. 
-
-Mr. Kaisen and Ms. Alyari will be expected to continue their
-supporting work of the PF algorithm and DQM, respectively, although
-their activities should be winding down at that point. They will
-focus on their respective thesis topics and prepare for graduation as
-well. At this time, it will be natural for newer students to share
-some of the time commitment for the development of the PF algorithm
-and the DQM, to be ready to transition once Mr. Kaisen and Ms. Alyari
-graduate. 
-
-
-
-\bigskip
-\bigskip
-{\bf \Large Year Five (1-June-2018 -- 31-May-2019)}
-\bigskip
-
-
-During year five of this proposal, it is expected that some or all of
-the personnel will be transitioning to the next stages in their
-careers. The full Run 2 dataset should be mostly in hand, and the
-question of the hierarchy problem will finally be
-illuminated, either by a discovery or stringent limits on BSM
-physics involving boosted top quarks. 
-
-It is important to maintain a flexible work plan during this 
-phase to deal with unforeseen circumstances, but Dr. Dolen,
-Mr. Kaisen, and Ms. Alyari will continue the work much as in year
-four, while taking the necessary time to interview and search for the
-next opportunities for their career. Younger students will be
-starting around this time also, to take over work in the PF
-reconstruction and the DQM. 
-
-
-At the end of Year Five and beyond, Run 3 of the LHC will be on the
-immediate horizon, and the fruits of the labors of the fully upgraded
-CMS will finally be all in hand. The PF algorithm and boosted
-techniques should be well-developed, and available as a long-term
-legacy of the research plan from this proposal. The direction of the
-research plan of Rappoccio's group will very much depend on what is
-(or is not) seen during Run 2, but the fundamental developments will
-be widely applicable during Run 3, and at that point will be robust
-and well-understood techniques, widely deployed throughout the
-collaboration. The impact of this proposal will be very large, and
-will be able to impact the physics of the LHC program far into the
-future. 
 
 \newpage
 \pagenumbering{arabic}
@@ -1317,26 +1021,5 @@ data-sharing projects such as
 {\tt HEPDATA}~\footnote{http://hepdata.cedar.ac.uk}. 
 
 
-\bigskip
-\noindent{\Large \bf Data Management Plan : Mobile Application Data}
-\bigskip
-
-The data and meta-data collected from the Mobile Application will be
-stored for each individual exercise, along with the age of the
-student. As mentioned above, this will be done in a way that complies
-with the ``Children's Online Privacy Protection Act of 1998
-(COPPA)''~\cite{coppa}, as no personal information about the student
-(or their parents) will be collected. The types of information that
-will be stored are the number of attempts for each puzzle, the number
-of hints used in each puzzle, the time it takes to complete each
-puzzle, etc. This will be stored in {\tt sqlite} databases, interfaced
-to {\tt python} to take advantage of the {\tt Kivy} framework tools
-that will be used in the Mobile Application. 
-
-This information will be freely available to the public via a web
-interface, and the {\tt sqlite} files will be available on demand. The
-games based on the {\tt Kivy} framework will be open-source and freely
-available for downloads, to encourage user-level modifications and
-creative ideas. 
 
 \end{document}
