@@ -19,7 +19,7 @@
 \newcommand{\ttbar}        {\ensuremath{\mathrm{t}\overline{\mathrm{t}}}}
 \newcommand{\bbbar}        {\ensuremath{\mathrm{b}\overline{\mathrm{b}}}}
 \newcommand{\qqbar}        {\ensuremath{\mathrm{q}\overline{\mathrm{q}}}}
-
+\newcommand{\Zprime}       {\ensuremath{Z^{\prime}}}
 
 \DeclareFontFamily{OT1}{psyr}{}
 \DeclareFontShape{OT1}{psyr}{m}{n}{<-> psyr}{}
@@ -143,10 +143,10 @@ searches.
 Various mechanisms beyond the standard model
 have been proposed to resolve the hierarchy problem.
 Since the most divergent 
-quantum correction to the Higgs mass
-involves top quarks, it is natural to suppose
-that these BSM mechanisms preferentially involve interactions with the
-top quark to cancel this divergence.
+quantum corrections to the Higgs mass
+involve top quarks and SM bosons, it is natural to suppose
+that BSM mechanisms preferentially involve loop interactions with these
+particles to cancel this divergence.
 Two major classes of models which solve the hierarchy problem
 discussed above are supersymmetry
 (SUSY)~\cite{Gunion:1987qv,Feng:1999mn,Kitano:2006gv,Barbieri:2009ev,Horton:2009ed}
@@ -154,15 +154,17 @@ and extra dimensions (ED)~\cite{ed,rs1,rs2,rs_gluon_1}. SUSY involves
 a ``supersymmetry'' of nature, where all known particles have a
 ``superpartner'' of opposite spin (bosons have a fermionic partner,
 and vice versa). The production of SUSY particles at the LHC typically
-involves cascade decays resulting in top quarks and other light
-supersymmetric and nonsupersymmetric particles. ED postulates extra
+involves cascade decays resulting in top quarks, $W/Z$ and Higgs
+bosons, and other light supersymmetric and nonsupersymmetric
+particles. ED postulates extra
 spatial dimensions, in which gravity propagates differently than the
 other forces, resulting in an apparent discrepancy in our local 3+1 dimensional
 manifold (or ``brane''). ED models typically involve
-Kaluza-Klein (KK) excitations of known particles, and KK gluons in
-particular typically decay into $\ttbar$ pairs. 
-One common feature of both of these models is the presence of top
-quarks in the final state which are often highly Lorentz boosted. 
+Kaluza-Klein (KK) excitations of known particles. For instance, KK
+gravitons typically decay into $VV$ pairs, KK gluons typically decay
+into $\ttbar$ pairs, and radions typically decay into $HH$ pairs. 
+One common feature of both of these models is the presence of SM
+particles in the final state which are often highly Lorentz boosted. 
 
 
 
@@ -172,8 +174,8 @@ quarks~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetp
 Summaries of these techniques are in Refs.~\cite{boost2010,boost2011}.
 These
 large jets are referred to as 
-``boosted jets'' (or ``boosted tops'' in the case of top quarks), and
-they are
+``boosted jets'' (``boosted tops'', ``boosted $W$'s'', ``boosted
+$Z$'s'', ``boosted Higgs''), and they are
 different from jets that originate from quantum chromodynamic (QCD)
 processes in that they exhibit different internal structure
 (``substructure''), and have an intrinsic jet mass. 
@@ -240,7 +242,129 @@ better than the sensitivity without using these techniques. This
 improvement grows even larger with the mass of the KK gluon. 
 
 
+
+\section{Prior Work}
+
+\subsection{CMS Activities}
+\label{sec:priorcms}
+
+Prof. Rappoccio has played a critical leading role in implementing and
+understanding these jet substructure and boosted techniques at the LHC
+in general, and became the foremost expert of this topic at CMS. This
+work started while he was
+a postdoctoral fellow at Johns Hopkins University working under NSF
+Grant 1100862, and expanded greatly during his tenure at UB, based on
+his short-term startup funds. 
+
+Rappoccio's early studies (before collision data) and
+implementation of the algorithms are outlined in
+Ref.~\cite{catop_cms}. He has authored the first searches
+for new physics with collision data to be published using boosted
+top~\cite{EXO-11-006} and boosted $W/Z$~\cite{EXO-11-095} techniques
+anywhere in the world, as well as the first measurement of the jet
+mass at CMS~\cite{SMP-12-019}. In addition, he has contributed to
+several of the now-seminal review papers about the subject, which are
+used as standard references and benchmarks in the community at
+large~\cite{boost2010,boost2011}. 
+
+After these pioneering efforts successfully established the CMS
+Collaboration as a world leader in the fields of jet substructure and
+boosted hadronic final states, Prof. Rappoccio
+was made the convener of a newly-formed ``Beyond Two Generations'' Physics
+Analysis Group (B2G PAG) at CMS, which focuses on these highly-boosted
+final states, in particular in the top sector. This group was formed
+specifically to assist development of these boosted tools, and
+Rappoccio's leadership in launching this new program was one reason
+for its success. {\bf Does this sound lame?}
+In his tenure as convener since August 2012, CMS has deployed these
+techniques in 5 analyses of the 8 \TeV\ data (in preparation for paper 
+submission)~\cite{B2G-12-005,B2G-12-006,B2G-12-012,B2G-12-015,B2G-12-019}. 
+Furthermore, the techniques are being adopted in four other
+analyses to search for other exotic signatures (including the 8-\TeV\
+continuation of Ref.~\cite{EXO-11-095} in Ref.~\cite{EXO-12-024}), as
+well as two analyses to search for supersymmetry. 
+
+%The performance we have achieved with these algorithms is nothing
+%short of astonishing. First with 7 \TeV\ collision data, and now with
+%8 \TeV\ collision data, the efficiency to identify fully-merged
+%top-quark jets is approximately 50\% with a misidentification rate of
+%approximately 5\%, and the efficiency to identify fully-merged
+%$W/Z$-boson jets is approximately 70\% with a misidentification rate
+%of approximately 20\%. 
+For instance, the latest 8 \TeV\ limits using boosted
+techniques to search for $\ttbar$ resonances are shown in
+Fig.~\ref{fig:limits-kk_combined} and finally probe, for
+the first time, a viable region of parameter space available for
+models of ED that are not already disfavored by
+precision measurements~\cite{Davoudiasl:2009cd}. 
+Without the boosted-jet strategies for searches that Prof. Rappoccio has
+developed, it would not have been possible to access this regime at
+CMS by any other method. This highlights the absolutely critical
+nature of developing these tools in searches. 
+
+
+
+In addition to pioneering the searches for new physics using
+boosted-jet techniques, Prof. Rappoccio has also been instrumental in developing,
+commissioning, and maintaining the general jet reconstruction and
+particle-flow algorithms at CMS. Some of the areas in which
+He has played a leading role are the development of the ``charged
+hadron subtraction'' algorithm at CMS, where charged PF candidates
+associated with pileup vertices were removed directly from
+jets, resulting in a 10-20\% improvement in the jet energy
+resolution, as well as the development of the
+median-$p_\mathrm{T}$-per-unit-area pileup correction for jets at CMS. He was also
+instrumental in getting the ``anti-$k_\mathrm{T}$'' algorithm~\cite{ktalg} accepted
+by the CMS collaboration, and redesigned the software framework to
+make usage of the {\tt fastjet} package~\cite{fastjet,fastjet1} so as to have a
+common algorithmic basis for jet reconstruction in ATLAS, CMS, and the
+theoretical community. He also
+participated in the software validation and
+data-quality monitoring (DQM) of the jets at CMS before and during the
+Run 1 startup commissioning at 2.36 and 7 \TeV. 
+
+Furthermore, Prof. Rappoccio's group has participated in the larger UB
+activities of FPIX commissioning and testing during the first year of
+his position. Dr. Dolen and Dr. Kumar developed tests for the FPIX
+modules using a probe station at Fermilab, leading a team of graduate
+and undergraduate students after severe budgetary constraints at
+Fermilab descoped much of the project. 
+
+
+\subsection{Non-CMS Activities}
+To highlight the importance of this project, the SnowMass effort
+described above has made the identification of boosted jets an
+extremely high priority for the future of HEP in general. Dr. Dolen
+has been extensively involved in this effort, and is co-leading the
+group that focuses on boosted top-quark tagging techniques. 
+
+In addition, Prof. Rappoccio has played an integral part of the {\bf BOOST}
+conference series and other conferences, such as the {\bf Boston Jet
+  Substructure Workshop}. The BOOST conference is the foremost
+conference on jet substructure and boosted-jet algorithms, and the
+conference reports in 2010 and 2011 are used as standard references in
+benchmarking these techniques~\cite{boost2010,boost2011}.
+
+
+As a graduate student at Harvard University, Rappoccio also performed
+major updates and modifications of the Silicon Readout Controller
+(SRC) for the CDF experiment at Fermilab. These developments allowed
+the readout of the silicon detector at Level 1 of the CDF triggering
+system, which then could be passed to a tracking algorithm at Level
+2. This made the extensive $B$-physics program at CDF possible, since
+without these track triggers, the quality of results would have been
+severely degraded. 
+
+
+\clearpage
+
+
+
+
+\section{Proposed Program of Research}
+
 \subsection{Boosted Jet Algorithms}
+\label{sec:boostedjets}
 
 The performance of the boosted-jet algorithms at CMS will be heavily
 affected by increasing pileup in Run 2 and beyond. For instance,
@@ -298,6 +422,36 @@ and deployable strategies can be developed prior to the startup of Run
 
 \subsection{BSM Searches with Boosted Jets}
 \label{sec:bsm}
+
+Rappoccio's tenure as ``Beyond Two Generations'' (B2G) Physics
+Analysis Group Convener at CMS continues until the end of 2014. The
+goals during this time are to
+finish the analyses of the 8 \TeV\ CMS data, as well as to prepare in
+earnest for the upcoming LHC Run 2. There are several B2G analyses
+that are expected to be of general interest to the larger community
+immediately after the beginning of Run 2, and must be ready at the
+onset of data-taking. These include searches for
+$\ttbar$ resonances, scalar and vector-like heavy-quark partners,
+long-lived particles decaying to top quarks, and dark matter
+signatures involving top quarks. For this goal to be realized,
+the novel and innovative tools described in
+Sections~\ref{sec:priorcms} and \ref{sec:boostedjets} must
+be ready immediately. 
+
+The activities of Rappoccio's group will be intricately tied to this
+goal. The $\ttbar$ resonances searches performed by his group in the
+past will continue to be a flagship analysis for CMS, and is expected
+to be ready in time for the startup of the LHC in Run 2. In addition,
+the $VV$ resonances that Rappoccio's group has pioneered has become an
+enormously popular topic in the first run of the LHC, and this group
+has grown in scope scope enormously. Initially the substructure tools
+described above were only deployed in the all-hadronic analysis. This
+has since grown to semileptonic final states in $WW$, $WZ$, and $ZZ$
+resonances, as well as a new analysis in $HH$ resonances. There are
+many additional possibilities for growth. 
+{\bf This is lame but it's a start.}
+
+
 
 \subsection{SM Measurements with Boosted Jets}
 \label{sec:topxs}
@@ -488,117 +642,9 @@ detector once it is installed at CMS.
 Without support for Dr. Dolen and Mr. Kaisen, these proposed
 activities will not be possible. 
 
-
-\section{Prior Work}
-
-\subsection{CMS Activities}
-
-Prof. Rappoccio has played a critical leading role in implementing and
-understanding these jet substructure and boosted techniques at the LHC
-in general, and became the foremost expert of this topic at CMS while
-a postdoctoral fellow at Johns Hopkins University working under NSF
-Grant 1100862 and earlier. 
-His early studies (before collision data) and
-implementation of the algorithms are outlined in
-Ref.~\cite{catop_cms}. He has authored the first searches
-for new physics with collision data to be published using boosted
-top~\cite{EXO-11-006} and boosted $W/Z$~\cite{EXO-11-095} techniques
-anywhere in the world, as well as the first measurement of the jet
-mass at CMS~\cite{SMP-12-019}. In addition, he has contributed to
-several of the now-seminal review papers about the subject, which are
-used as standard references and benchmarks in the community at
-large~\cite{boost2010,boost2011}. 
-
-After these pioneering efforts successfully established the CMS
-Collaboration as a world leader in the fields of jet substructure and
-boosted hadronic final states, Prof. Rappoccio
-was made the convener of the ``Beyond Two Generations'' Physics
-Analysis Group (B2G PAG) at CMS, which focuses on these highly-boosted
-final states, in particular in the top sector. 
-In his tenure as convener since August 2012, CMS has deployed these
-techniques in 5 analyses of the 8 \TeV\ data (in preparation for paper 
-submission)~\cite{B2G-12-005,B2G-12-006,B2G-12-012,B2G-12-015,B2G-12-019}. 
-Furthermore, the techniques are being adopted in four other
-analyses to search for other exotic signatures (including the 8-\TeV\
-continuation of Ref.~\cite{EXO-11-095} in Ref.~\cite{EXO-12-024}), as
-well as two analyses to search for supersymmetry. 
-
-%The performance we have achieved with these algorithms is nothing
-%short of astonishing. First with 7 \TeV\ collision data, and now with
-%8 \TeV\ collision data, the efficiency to identify fully-merged
-%top-quark jets is approximately 50\% with a misidentification rate of
-%approximately 5\%, and the efficiency to identify fully-merged
-%$W/Z$-boson jets is approximately 70\% with a misidentification rate
-%of approximately 20\%. 
-The latest 8 \TeV\ limits using boosted
-techniques to search for $\ttbar$ resonances are shown in
-Fig.~\ref{fig:limits-kk_combined} and finally probe, for
-the first time, a viable region of parameter space available for
-models of ED that are not already disfavored by
-precision measurements~\cite{Davoudiasl:2009cd}. 
-Without the boosted-jet strategies for searches that Prof. Rappoccio has
-developed, it would not have been possible to access this regime at
-CMS by any other method. This highlights the absolutely critical
-nature of developing these tools in searches. 
-
-
-
-In addition to pioneering the searches for new physics using
-boosted-jet techniques, Prof. Rappoccio has also been instrumental in developing,
-commissioning, and maintaining the general jet reconstruction and
-particle-flow algorithms at CMS. Some of the areas in which
-He has played a leading role are the development of the ``charged
-hadron subtraction'' algorithm at CMS, where charged PF candidates
-associated with pileup vertices were removed directly from
-jets, resulting in a 10-20\% improvement in the jet energy
-resolution, as well as the development of the
-median-$p_\mathrm{T}$-per-unit-area pileup correction for jets at CMS. He was also
-instrumental in getting the ``anti-$k_\mathrm{T}$'' algorithm~\cite{ktalg} accepted
-by the CMS collaboration, and redesigned the software framework to
-make usage of the {\tt fastjet} package~\cite{fastjet,fastjet1} so as to have a
-common algorithmic basis for jet reconstruction in ATLAS, CMS, and the
-theoretical community. He also
-participated in the software validation and
-data-quality monitoring (DQM) of the jets at CMS before and during the
-Run 1 startup commissioning at 2.36 and 7 \TeV. 
-
-Furthermore, Prof. Rappoccio's group has participated in the larger UB
-activities of FPIX commissioning and testing during the first year of
-his position. Dr. Dolen and Dr. Kumar developed tests for the FPIX
-modules using a probe station at Fermilab, leading a team of graduate
-and undergraduate students after severe budgetary constraints at
-Fermilab descoped much of the project. 
-
-
-\subsection{Non-CMS Activities}
-To highlight the importance of this project, the SnowMass effort
-described above has made the identification of boosted jets an
-extremely high priority for the future of HEP in general. Dr. Dolen
-has been extensively involved in this effort, and is co-leading the
-group that focuses on boosted top-quark tagging techniques. 
-
-In addition, Prof. Rappoccio has played an integral part of the {\bf BOOST}
-conference series and other conferences, such as the {\bf Boston Jet
-  Substructure Workshop}. The BOOST conference is the foremost
-conference on jet substructure and boosted-jet algorithms, and the
-conference reports in 2010 and 2011 are used as standard references in
-benchmarking these techniques~\cite{boost2010,boost2011}.
-
-
-As a graduate student at Harvard University, Rappoccio also performed
-major updates and modifications of the Silicon Readout Controller
-(SRC) for the CDF experiment at Fermilab. These developments allowed
-the readout of the silicon detector at Level 1 of the CDF triggering
-system, which then could be passed to a tracking algorithm at Level
-2. This made the extensive $B$-physics program at CDF possible, since
-without these track triggers, the quality of results would have been
-severely degraded. 
-
-
 \clearpage
 
 
-\clearpage
 \section{Outreach and education}
 \label{sec:outreach}
 
@@ -818,27 +864,25 @@ suburban venues).
 \bigskip
 
 
-The requested funds of \$XXXXX USD (for 3 years starting in 2014)
+The requested funds of \$578,755 USD (for 3 years starting in 2014)
 would cover two (2) months of summer salary for Prof. Rappoccio per
 year for three (3) years
-(\$XXX), the full salary for 
-one (1) postdoctoral fellow, Dr. James Dolen (\$XXX) for three (3)
-years, and salary plus
+(\$48,626), the full salary for 
+one (1) postdoctoral fellow, Dr. James Dolen, for three (3)
+years (\$154,224), and salary plus
 tuition for two (2) graduate students, one in-state (Joshua
-Kaisen) and one out-of-state (Maral Alyari), totaling \$XXXX in
-salary and \$XXXX in tuition. 
+Kaisen) and one out-of-state (Maral Alyari), totaling \$91,812 in
+salary and \$13,740 in tuition. 
 
 
 \bigskip
 {\bf Travel}
 \bigskip
 
-This research will require significant travel to CERN to participate
-in CMS meetings for Prof. Rappoccio. Additionally, this will cover
-travel costs for Dr. Dolen, Mr. Kaisen and Ms. Alyari for relocation
-to Fermilab or CERN. 
-Hence, the proposal requests \$XXXX in travel funds for the three
-years of activity. 
+This research will require significant travel to CERN. Additionally,
+this will cover travel costs for Dr. Dolen, Mr. Kaisen and Ms. Alyari
+for relocation to Fermilab or CERN. Hence, the proposal requests
+\$31,216 in travel funds for the three years of activity. 
 
 \bigskip
 {\bf Facilities and Administration Indirect Costs}
@@ -848,7 +892,7 @@ The above figures carry an indirect cost
 percentage of 26\% for Dr. Dolen, Mr. Kaisen and Ms. Alyari as they
 will not be located at the UB campus. The indirect cost
 for Rappoccio's summer salary is 56\%, because he is located at the
-UB Campus. The total indirect cost is \$XXXXX.
+UB Campus. The total indirect cost is \$149,563.
 
 Below is a year-by-year summary of the funding request. 
 
