@@ -4,6 +4,5 @@
 *.log
 *.out
 *.blg
-rappoccio2013.pdf
 .DS_Store
 .gitignore

@@ -53,12 +53,14 @@
 
 \maketitle
 
+
+\iffalse
 \abstract{
 The first run of the Large Hadron Collider (LHC) in Geneva,
 Switzerland has
 completed with resounding success after the discovery of a Higgs boson
 at 125 \GeVcc. This particle is expected to break the symmetry between
-the electroweak and electromagnetic scales of interactions. However,
+the scales of the weak and electromagnetic interactions. However,
 with this new discovery, new questions immediately arise. It was
 expected that in addition to the solution to electroweak symmetry
 breaking, the first run of the LHC would also shed light onto the
@@ -72,56 +74,34 @@ This proposal focuses on finding solutions to the hierarchy problem
 using novel reconstruction techniques to reconstruct
 highly-boosted standard model particles such as top quarks, $W/Z$ and
 Higgs bosons. The principle investigator (PI) has played a critical
-role in bringing these techniques to deployment, and will continue to
+role in bringing these techniques to deployment at CMS, and will continue to
 do this in the future. 
 
-To accomplish this goal, it is necessary to fully utilize, the
+To accomplish this goal, it is necessary to fully utilize the
 particle flow reconstruction algorithm at CMS. More generally,
 particle flow been a
 resounding success in the discovery of the Higgs boson at 125 \GeVcc, and
-also in the myriad of searches in the first run of the LHC for
-supersymmetric and other exotic models beyond the standard model. The
+also in the general physics program of CMS at large. The
 proposed research will bring the particle flow algorithm into the next
 runs of the LHC, based on the extensive previous experience of the PI
 that has been gained in the past.  
 
 In addition to these tasks, the proposed research will also contribute
-to commissioning and operations of the pixel detector at CMS. 
+to commissioning and operations of the upgraded forward pixel detector
+in the ``Phase 1'' CMS Upgrade. 
 
 }
-
+\fi
 
 \section{Introduction}
 
-Prof. Salvatore Rappoccio (tenure-track Assistant Professor) joined
-the Faculty at the University at Buffalo, SUNY (UB) in 2012. The UB
-group has an NSF grant (Award Number 1205960, July 15th 2012 - June
-30th 2015) from Professors Kharchilava and Iashvili, however this was
-renewed one year before Prof. Rappoccio joined the Faculty and does
-not provide support for him or his group. 
-
-
-
-Prof. Rappoccio's group consists
-of Dr. James Dolen (postdoctoral fellow), Mr. Joshua Kaisen and Ms. Maral Alyari
-(graduate students), Mr. Brendan Smith and Mr. Jonathan Goodrum (undergraduate
-students, the latter supported under the ``Collegiate Science and
-Technology Program'' (CSTEP)
-at UB, which provides research funding for minority and
-disadvantaged undergraduate students). Work has already started
-on the proposed research using short-term startup funds. 
-These startup funds will run out by 30-June-2014. If no funding is
-found, the support for Dr. Dolen, Mr. Kaisen, and Ms. Alyari will run
-out, and they will not be able to continue their studies. 
-
-The larger UB group consists of Profs. Kharchilava and Iashvili, two
-postdoctoral fellows, Dr. Ashish Kumar and Dr. Supriya Jain, and three
-Ph.D. students, Mr. Joseph Zennamo, Mr. Andrew Godshalk, and Mr. Jimin
-George. Prof. Rappoccio's group has already commenced collaboration
-with the teams of Kharchilava and Iashvili, specifically in the pixel
-detector commissioning. 
-
-
+The research proposed here will focus on finding solutions to the
+hierarchy problem of particle physics using novel jet reconstruction
+techniques to reconstruct highly-boosted standard model particles such
+as top quarks, $W/Z$ and Higgs bosons. This research will be critical
+in the next phase of Large Hadron Collider (LHC) operations to
+maximize the discovery potential at the Energy Frontier of particle
+physics. 
 
 With the discovery of a 
 standard model (SM)-like Higgs boson at
@@ -150,27 +130,15 @@ particles to cancel this divergence.
 Two major classes of models which solve the hierarchy problem
 discussed above are supersymmetry
 (SUSY)~\cite{Gunion:1987qv,Feng:1999mn,Kitano:2006gv,Barbieri:2009ev,Horton:2009ed}
-and extra dimensions (ED)~\cite{ed,rs1,rs2,rs_gluon_1}. SUSY involves
-a ``supersymmetry'' of nature, where all known particles have a
-``superpartner'' of opposite spin (bosons have a fermionic partner,
-and vice versa). The production of SUSY particles at the LHC typically
-involves cascade decays resulting in top quarks, $W/Z$ and Higgs
-bosons, and other light supersymmetric and nonsupersymmetric
-particles. ED postulates extra
-spatial dimensions, in which gravity propagates differently than the
-other forces, resulting in an apparent discrepancy in our local 3+1 dimensional
-manifold (or ``brane''). ED models typically involve
-Kaluza-Klein (KK) excitations of known particles. For instance, KK
-gravitons typically decay into $VV$ pairs, KK gluons typically decay
-into $\ttbar$ pairs, and radions typically decay into $HH$ pairs. 
-One common feature of both of these models is the presence of SM
-particles in the final state which are often highly Lorentz boosted. 
-
+and extra dimensions (ED)~\cite{ed,rs1,rs2,rs_gluon_1}. 
+After Run 1 of the LHC, the available phase space for these models
+contains SM particles in the final state that are often highly
+Lorentz boosted. 
 
 
 In recent years, new jet-clustering techniques have been developed to handle
-highly-boosted SM particles including top
-quarks~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetpruning2,nsub,heptoptagger,trimming}.
+highly-boosted massive SM
+particles~\cite{Seymour:1993mx,boostedhiggs,catop_theory,catop_cms,jetpruning1,jetpruning2,nsub,heptoptagger,trimming}.
 Summaries of these techniques are in Refs.~\cite{boost2010,boost2011}.
 These
 large jets are referred to as 
@@ -182,7 +150,7 @@ processes in that they exhibit different internal structure
 These algorithms
 analyze the substructure and mass
 of the boosted jet to break it up into smaller ``subjets'' which can be
-analyzed at angular scales smaller than 0.7, thereby allowing analysis
+analyzed at smaller angular scales, thereby allowing analysis
 of highly-boosted states. Figure~\ref{boostedtop_eventdisplay}
 shows an event display of such a highly-boosted top quark at CMS. 
 The blue rectangles represent the
@@ -220,30 +188,55 @@ separate subjets.
 \end{figure}
 
 
-In both of the BSM solutions to the hierarchy problem outlined above
-(SUSY and ED), the majority of the
-lower masses for the new particles have been excluded. The top squark
-mass is currently
-constrained to be above $\sim$ 650 \GeVcc\ if the mass of the
-neutralino is zero~\cite{SUS-13-011}, and the mass of
-KK gluons is currently constrained to be
-above $\sim$ 2.5 \TeVcc\ (Fig.~\ref{fig:limits-kk_combined}).
-The Lorentz boosts of top quarks in the final state of these two cases
-will be around $\gamma=4$ for the first case, and around $\gamma=7$ in
-the second, which means the masses of the unexcluded particles will be
-in the ``boosted regime'' in the upcoming 13 or 14 \TeV\ run of the
-LHC (``Run 2'') and beyond (``Run 3''). Without using these
+Without using these
 boosted-top strategies, the
 sensitivity of searches for particles predicted by these BSM models is
 reduced by a factor of ten or more, even at energies accessible during
-Run 1 of the LHC. For instance, for a KK gluon with a mass of 2
-\TeVcc, the sensitivity of boosted-top techniques is a factor of 10
-better than the sensitivity without using these techniques. This
-improvement grows even larger with the mass of the KK gluon. 
+Run 1 of the LHC. For instance, Fig.~\ref{fig:limits-kk_combined}
+shows the cross-section limits for a KK gluon from the analysis in
+Ref~\cite{B2G-13-001}. At a mass of 2 \TeVcc, the sensitivity of
+boosted-top techniques is a factor of 10 better than the sensitivity
+without using these techniques. This improvement grows even larger
+with the mass of the KK gluon. 
 
 
 
 \section{Prior Work}
+\label{sec:priorwork}
+
+
+\subsection{Overview of Activities}
+\label{sec:overview}
+
+Prof. Salvatore Rappoccio (tenure-track Assistant Professor) joined
+the Faculty at the University at Buffalo, SUNY (UB) in 2012. The UB
+group has an NSF grant (Award Number 1205960, July 15th 2012 - June
+30th 2015) from Professors Kharchilava and Iashvili, however this was
+renewed one year before Prof. Rappoccio joined the Faculty and does
+not provide support for him or his group. 
+
+
+
+Prof. Rappoccio's group consists
+of Dr. James Dolen (postdoctoral fellow), Mr. Joshua Kaisen and Ms. Maral Alyari
+(graduate students), Mr. Brendan Smith and Mr. Jonathan Goodrum (undergraduate
+students, the latter supported under the ``Collegiate Science and
+Technology Program'' (CSTEP)
+at UB, which provides research funding for minority and
+disadvantaged undergraduate students). Work has already started
+on the proposed research using short-term startup funds. 
+These startup funds will run out by 30-June-2014. If no funding is
+found, the support for Dr. Dolen, Mr. Kaisen, and Ms. Alyari will run
+out, and they will not be able to continue their studies. 
+
+The larger UB group consists of Profs. Kharchilava and Iashvili, two
+postdoctoral fellows, Dr. Ashish Kumar and Dr. Supriya Jain, and three
+Ph.D. students, Mr. Joseph Zennamo, Mr. Andrew Godshalk, and Mr. Jimin
+George. Prof. Rappoccio's group has already commenced collaboration
+with the teams of Kharchilava and Iashvili, specifically in the
+commissioning of the pixel detector. 
+
+
 
 \subsection{CMS Activities}
 \label{sec:priorcms}
@@ -272,13 +265,11 @@ Collaboration as a world leader in the fields of jet substructure and
 boosted hadronic final states, Prof. Rappoccio
 was made the convener of a newly-formed ``Beyond Two Generations'' Physics
 Analysis Group (B2G PAG) at CMS, which focuses on these highly-boosted
-final states, in particular in the top sector. This group was formed
-specifically to assist development of these boosted tools, and
-Rappoccio's leadership in launching this new program was one reason
-for its success. {\bf Does this sound lame?}
+final states, in particular in the top sector. 
 In his tenure as convener since August 2012, CMS has deployed these
-techniques in 5 analyses of the 8 \TeV\ data (in preparation for paper 
-submission)~\cite{B2G-12-005,B2G-12-006,B2G-12-012,B2G-12-015,B2G-12-019}. 
+techniques in 4 analyses of the 8 \TeV\ data (one paper
+submitted~\cite{B2G-13-001}, and several in
+preparation)~\cite{B2G-12-012,B2G-12-015,B2G-12-019}. 
 Furthermore, the techniques are being adopted in four other
 analyses to search for other exotic signatures (including the 8-\TeV\
 continuation of Ref.~\cite{EXO-11-095} in Ref.~\cite{EXO-12-024}), as
@@ -292,7 +283,8 @@ well as two analyses to search for supersymmetry.
 %$W/Z$-boson jets is approximately 70\% with a misidentification rate
 %of approximately 20\%. 
 For instance, the latest 8 \TeV\ limits using boosted
-techniques to search for $\ttbar$ resonances are shown in
+techniques to search for $\ttbar$ resonances of Kaluza-Klein gluons
+from Ref.~\cite{B2G-13-001} are shown in
 Fig.~\ref{fig:limits-kk_combined} and finally probe, for
 the first time, a viable region of parameter space available for
 models of ED that are not already disfavored by
@@ -308,7 +300,7 @@ In addition to pioneering the searches for new physics using
 boosted-jet techniques, Prof. Rappoccio has also been instrumental in developing,
 commissioning, and maintaining the general jet reconstruction and
 particle-flow algorithms at CMS. Some of the areas in which
-He has played a leading role are the development of the ``charged
+he has played a leading role are the development of the ``charged
 hadron subtraction'' algorithm at CMS, where charged PF candidates
 associated with pileup vertices were removed directly from
 jets, resulting in a 10-20\% improvement in the jet energy
@@ -326,17 +318,38 @@ Run 1 startup commissioning at 2.36 and 7 \TeV.
 Furthermore, Prof. Rappoccio's group has participated in the larger UB
 activities of FPIX commissioning and testing during the first year of
 his position. Dr. Dolen and Dr. Kumar developed tests for the FPIX
-modules using a probe station at Fermilab, leading a team of graduate
-and undergraduate students after severe budgetary constraints at
-Fermilab descoped much of the project. 
+high-density interconnect (HDI) modules using a probe station at
+Fermilab, leading a team of graduate and undergraduate students after
+severe budgetary constraints at Fermilab significantly reduced the
+number of people working on this particular part of the project. 
 
+Another past responsibility of Prof. Rappoccio at CMS was the Level-2
+management position of the ``Analysis Tools'' subgroup of
+the Offline Project. During his tenure, Run 1 of the LHC began, and
+Rappoccio was responsible for guiding a team of people to ensure that
+proper analysis of the collision data could be done. This included
+such activities as minimizing the size of the ``Analysis Object
+Dataset'' (AOD) data tier, the primary access point for all CMS
+analyses, the development of the ``Physics Analysis
+Toolkit''~\cite{pat}, and development and maintenance of the 
+{\tt FWLite} software
+framework, which is a small library of the CMS software tools 
+({\tt CMSSW}) designed for usage by analysts. 
+
+Finally, Prof. Rappoccio has been involved in the review of 11
+separate analyses at CMS as a member of the ``Analysis Review
+Committee'' (ARC). 
 
 \subsection{Non-CMS Activities}
-To highlight the importance of this project, the SnowMass effort
-described above has made the identification of boosted jets an
+To highlight the importance of the proposed research, the ``SnowMass
+on the Mississippi'' Community Summer Study~\cite{snowmass} effort
+has made the identification of boosted jets an
 extremely high priority for the future of HEP in general. Dr. Dolen
 has been extensively involved in this effort, and is co-leading the
-group that focuses on boosted top-quark tagging techniques. 
+group that focuses on boosted top-quark tagging techniques. The
+Snowmass ``white paper'' describing the need for these techniques, and
+the capability of future detectors to utilize them, is described in
+Ref.~\cite{snowmass_topdet}. 
 
 In addition, Prof. Rappoccio has played an integral part of the {\bf BOOST}
 conference series and other conferences, such as the {\bf Boston Jet
@@ -355,16 +368,154 @@ system, which then could be passed to a tracking algorithm at Level
 without these track triggers, the quality of results would have been
 severely degraded. 
 
+Finally, for his expertise in the field of jet substructure, Rappoccio
+was the primary reviewer for the ATLAS paper describing jet
+substructure and boosted techniques in Ref~\cite{Aad:2013gja},
+submitted to the {\em Journal of High Energy Physics} (JHEP). 
+
 \section{Proposed Program of Research}
 
-\subsection{Boosted Jet Algorithms}
+The proposed program of research outlined here will have three
+separate timelines. The first is to finish the analysis of the 8
+\TeV\ collision data from Run 1 of the LHC. The second is to ensure
+that the discovery capacity of CMS using boosted jets is maximized at
+the onset of the 13 \TeV\ run of the LHC (``Run 2''). The third is to
+further develop the capabilities of CMS at all levels (from detectors
+to analysis of data) in long-term planning of the high-luminosity LHC
+(HL-LHC, or ``Run 3''). 
+
+The focal point of this proposal is to pursue searches for BSM physics
+with boosted objects, described in Sec.~\ref{sec:bsm}. In addition to
+BSM searches, it is also important to characterize the SM
+contributions in these samples, and a program of study is described in
+Sec.~\ref{sec:topxs}. 
+
+For these goals to be met throughout the three LHC runs, many
+technical challenges must be met. The development and deployment of
+the particle flow~\cite{particleflow} algorithm is discussed in
+Sec.~\ref{sec:pf}. The collection and monitoring of data collection
+are outlined in Sec.~\ref{sec:dqm}. Finally, longer-term detector
+upgrades to the forward pixel (FPIX) detector are discussed in
+Sec.~\ref{sec:fpix}. 
+
+
+\subsection{Proposed Physics Analyses}
+\label{sec:proposedanalyses}
+
+\subsubsection{BSM Searches with Boosted Jets}
+\label{sec:bsm}
+
+The major motivation of this research proposal is the discovery of BSM
+physics with boosted jets. This is an ambitious goal, but one that
+Prof. Rappoccio is extraordinarily well-equipped to handle. 
+
+Rappoccio's tenure as ``Beyond Two Generations'' (B2G) Physics
+Analysis Group Convener at CMS continues until the end of 2014. The
+goals during this initial stage of the proposed research are to
+finish the analyses of the 8 \TeV\ CMS data searching for BSM physics,
+to prepare in earnest for the upcoming LHC Run 2, and to motivate
+longer-term upgrades for LHC Run 3 (``Phase 1'' and ``Phase 2'' CMS
+detector upgrades). 
+
+The immediate goal is to finish the analysis of well-motivated signals
+in the B2G group. The most important of these include searches for
+$\ttbar$ resonances and heavy-quark partners. These are two clear
+signatures of ED that can be observed at CMS. The research program of
+the B2G group, under Prof. Rappoccio's guidance, includes several
+seminal ``legacy'' papers on these topics, to offer a final word on
+the 8 \TeV\ data at the LHC. In addition, several other signatures are
+being investigated, including long-lived top quarks, dark matter
+signatures involving top quarks, and baryon-number violation in top
+quark decays. 
+
+There are two major analyses that Prof. Rappoccio's group has
+especially focused on in the past, and will continue to focus on in
+the future. Prof. Rappoccio's group are 
+leading analysts on the $\ttbar$ BSM searches, including the
+latest submission of a search in this channel~\cite{B2G-13-001}.
+While the current limits on BSM production of $\ttbar$ are stringent,
+further improvements are possible with the Run 1 data. 
+The full suite of existing jet substructure tools that
+Prof. Rappoccio has developed over the years (as described in
+Sec.~\ref{sec:priorcms}), along with new additional techniques involving
+the combination
+of jet substructure and bottom-quark jet tagging, are expected to
+yield significant improvements over expected sensitivities in the
+$\ttbar$ resonance search, of up to 30\%. 
+
+Additionally, Prof. Rappoccio's group will continue to contribute to 
+searches for diboson resonances ($WW/WZ/ZZ$) in the CMS Exotica
+group. Many advanced jet reconstruction techniques have already been
+deployed in this channel, but the paper of the combination of all of
+the various channels has not yet been completed. The research proposed
+here will help to bring this sensitive analysis to fruition. 
+
+
+
+In addition to the completion of the analysis of the LHC Run 1 data,
+the preparations for the startup of the LHC for Run 2 must be run
+concurrently. There are a suite of technical challenges to address in
+order for this to be accomplished, described in detail below in
+Sec.~\ref{sec:technicalchallenges}. 
+
+
+
+
+
+\subsubsection{SM Measurements with Boosted Jets}
+\label{sec:topxs}
+
+The searches performed during the first run of the LHC have not
+yielded signals of BSM physics. However, these data can still be used
+to perform measurements of SM particles. 
+
+In particular, the differential cross section for $\ttbar$ production
+at CMS~\cite{Chatrchyan:2012saa} is sensitive to the case where top
+quarks are produced with resolved decay products. However, this limits
+the sensitivity of the measurement to top quarks with low $\pt$. The
+boosted-top identification techniques outlined in Sec.~\ref{sec:bsm}
+can also select a very pure sample of $\ttbar$ pairs produced via SM
+mechanisms, and hence can also provide an opportunity to measure
+$\ttbar$ production in the highly-boosted regime where the traditional
+techniques have no sensitivity. 
+
+The measurement of the $\ttbar$ cross section in this regime is very
+interesting for a number of reasons. Firstly,
+it provides a sensitive test of perturbative QCD predictions for the
+NNLO $\ttbar$ production cross section that is not tested
+elsewhere. In addition, it may provide additional constraints on
+parton distribution functions (PDFs) for high-$x$ partons. Finally,
+since the production of $\ttbar$ pairs at this kinematic range is
+dominated by $\qqbar$ production, tests of the forward-backward
+asymmetry could be measured to compare to those measured at the
+Tevatron~\cite{Deliot:2013gla}. The existing LHC measurements focus on the
+central-forward charge asymmetry~\cite{Chatrchyan:2011hk,ATLAS:2012an}
+because they are performed at
+low top-quark $\pt$, and are not sensitive to the same physics
+quantity. Explorations of this regime could provide an interesting
+point of comparison and may elucidate the anomalously large
+forward-backward asymmetry observed at the Tevatron. 
+
+Prof. Rappoccio is already leading a large effort at CMS to measure the
+$\ttbar$ production cross section for $\pt^\mathrm{top} > 400$
+\GeVc. This effort grew out of a CMS educational program, the CMS Data
+Analysis School at Fermilab in January 2013. Under
+Rappoccio's direction, a team of three faculty, one postdoc, four
+graduate students and four undergraduate students from UB, Cornell,
+Siena College, and Johns Hopkins are producing a
+measurement of the $\ttbar$ production cross section, fully corrected
+for detector effects. 
+
+\subsection{Technical Challenges}
+\label{sec:technicalchallenges}
+
+\subsubsection{Boosted Jet Algorithms}
 \label{sec:boostedjets}
 
 The performance of the boosted-jet algorithms at CMS will be heavily
 affected by increasing pileup in Run 2 and beyond. For instance,
-Fig.~\ref{jetmass_toptags_trimming} is a figure made by Dr. Dolen in
-the context of the ``SnowMass on the Mississippi'' Community Summer
-Study~\cite{snowmass}, and shows the jet
+Fig.~\ref{jetmass_toptags_trimming} was made by Dr. Dolen in
+the context of Snowmass (as described above), and shows the jet
 mass of a boosted top-quark jet in three separate cases during Run 3: 
 without pileup (solid histogram), with 140 pileup
 interactions (open green histogram), and with 140 pileup
@@ -397,7 +548,7 @@ jets in an environment that is increasingly difficult to analyze. The
 success of this approach
 will require major innovations and cutting-edge tools, as
 well as a broad view of the field at large. The
-previous experience of Prof. Rappoccio (cited below) has provided the expertise
+previous experience of Prof. Rappoccio has provided the expertise
 needed to solve these extensive problems, and can ensure that timely
 and deployable strategies can be developed prior to the startup of Run
 2 of the LHC. 
@@ -414,86 +565,13 @@ and deployable strategies can be developed prior to the startup of Run
 \end{figure}
 
 
-\subsection{BSM Searches with Boosted Jets}
-\label{sec:bsm}
 
-Rappoccio's tenure as ``Beyond Two Generations'' (B2G) Physics
-Analysis Group Convener at CMS continues until the end of 2014. The
-goals during this time are to
-finish the analyses of the 8 \TeV\ CMS data, as well as to prepare in
-earnest for the upcoming LHC Run 2. There are several B2G analyses
-that are expected to be of general interest to the larger community
-immediately after the beginning of Run 2, and must be ready at the
-onset of data-taking. These include searches for
-$\ttbar$ resonances, scalar and vector-like heavy-quark partners,
-long-lived particles decaying to top quarks, and dark matter
-signatures involving top quarks. For this goal to be realized,
-the novel and innovative tools described in
-Sections~\ref{sec:priorcms} and \ref{sec:boostedjets} must
-be ready immediately. 
-
-The activities of Rappoccio's group will be intricately tied to this
-goal. The $\ttbar$ resonances searches performed by his group in the
-past will continue to be a flagship analysis for CMS, and is expected
-to be ready in time for the startup of the LHC in Run 2. In addition,
-the $VV$ resonances that Rappoccio's group has pioneered has become an
-enormously popular topic in the first run of the LHC, and this group
-has grown in scope scope enormously. Initially the substructure tools
-described above were only deployed in the all-hadronic analysis. This
-has since grown to semileptonic final states in $WW$, $WZ$, and $ZZ$
-resonances, as well as a new analysis in $HH$ resonances. There are
-many additional possibilities for growth. 
-{\bf This is lame but it's a start.}
-
-
-
-\subsection{SM Measurements with Boosted Jets}
-\label{sec:topxs}
-
-The searches performed during the first run of the LHC have not
-yielded signals of BSM physics. However, these data can still be used
-to perform measurements of SM particles. 
-
-In particular, the differential cross section for $\ttbar$ production
-at CMS~\cite{Chatrchyan:2012saa} is sensitive to the case where top
-quarks are produced with resolved decay products. However, this limits
-the sensitivity of the measurement to top quarks with low $\pt$. The
-boosted-top identification techniques outlined above can also measure
-the SM production cross section of $\ttbar$ pairs, in addition to the
-searches for new physics already described. 
-
-This measurement is very interesting for a number of reasons. Firstly,
-it provides a sensitive test of perturbative QCD predictions for the
-NNLO $\ttbar$ production cross section that is not tested
-elsewhere. In addition, it may provide additional constraints on
-parton distribution functions (PDFs) for high-$x$ partons. Finally,
-since the production of $\ttbar$ pairs at this kinematic range is
-dominated by $\qqbar$ production, tests of the forward-backward
-asymmetry could be measured to compare to those measured at the
-Tevatron~\cite{Deliot:2013gla}. The existing LHC measurements focus on the
-central-forward charge asymmetry~\cite{Chatrchyan:2011hk,ATLAS:2012an}
-because they are performed at
-low top-quark $\pt$, and are not sensitive to the same physics
-quantity. Explorations of this regime could provide an interesting
-point of comparison and may elucidate the anomalously large
-forward-backward asymmetry observed at the Tevatron. 
-
-The PI is already leading a large effort at CMS to measure the
-$\ttbar$ production cross section for $\pt^\mathrm{top} > 400$
-\GeVc. This effort grew out of a CMS educational program, the CMS Data
-Analysis School at Fermilab in January 2013. Under
-Rappoccio's direction, a team of three faculty, on postdoc, four
-graduate students and four undergraduate students from UB, Cornell,
-Siena College, and Johns Hopkins are producing a
-measurement of the $\ttbar$ production cross section fully corrected
-for detector effects. 
-
-\subsection{Particle Flow}
+\subsubsection{Particle Flow}
 \label{sec:pf}
 
 The success of the general physics program at CMS during
-the first run of the LHC, and in particular for the jet substructure
-techniques outlined above, was heavily contingent on the
+the first run of the LHC, and in particular of the jet substructure
+techniques outlined above, were heavily contingent on the
 PF algorithm~\cite{particleflow}. 
 When using the PF algorithm, performance of the top-tagging
 algorithms at CMS was increased by 20\% compared to using calorimetric
@@ -516,7 +594,7 @@ addition of a fourth silicon pixel layer to improve pileup
 rejection, and
 updates to the HCAL electronics to allow for readout of the
 longitudinal segmentation of hadronic showers. These upgrades will
-necessitate a second tuning of the PF
+necessitate another tuning of the PF
 algorithm, with new opportunities and challenges directly
 ahead. Mr. Kaisen and Prof. Rappoccio are already working with the
 ``global event description'' (GED), tracking and HCAL groups at CMS to
@@ -531,7 +609,8 @@ techniques we have developed will be significantly degraded.
 
 However, with the newer detector comes new possibilities. It may be
 possible to mitigate the efficiency loss of jet substructure
-algorithms at very high energies (when $\gamma$ is so large that all of
+algorithms at very high energies (when the Lorentz boost is so large
+that all of
 the products decay in a single calorimeter cell) using the upgraded
 detector capabilities. For instance, combining information from the
 longitudinally-segmented
@@ -544,7 +623,8 @@ maximize the potential for physics discoveries. Advanced development
 of the PF algorithm may illuminate new advantages that were
 previously impossible.
 
-\subsection{Trigger Development and Data Quality Monitoring}
+\subsubsection{Trigger Development and Data Quality Monitoring}
+\label{sec:dqm}
 
 In order to analyze highly-boosted topologies in BSM searches, 
 the relevant data must be collected in efficient triggers. Furthermore, the
@@ -594,7 +674,8 @@ thereby ensuring the safety of the physics program proposed here.
 
 
 
-\subsection{Forward Pixel Detector Commissioning and Operations} 
+\subsubsection{Forward Pixel Detector Commissioning and Operations} 
+\label{sec:fpix}
 
 In order to maintain the ability of the PF algorithm to perform pileup
 rejection in the foreseen high-luminosity run of the LHC (HL-LHC),
@@ -633,14 +714,12 @@ probe station was revived for usage at
 SiDet, and a LabView program was developed to do the testing.
 
 In addition to the already completed activities, Rappoccio's group has
-committed to other HDI burnin tests, tests of the half-disk assembly
+committed to other HDI burn-in tests, tests of the half-disk assembly
 of the FPIX detector, beam tests (the first scheduled in Fall 2013),
 and overall commissioning of the FPIX detector. Longer-term activities
 will include operations and support of the upgraded Phase-1 pixel
 detector once it is installed at CMS. 
 
-Without support for Dr. Dolen and Mr. Kaisen, these proposed
-activities will not be possible. 
 
 \clearpage
 
@@ -656,7 +735,8 @@ educate high school-level students and teachers via the {\em QuarkNet}
 program  at UB, however there is
 very little in the way of educating the general
 public. 
-The plan outlined in this proposal will extend the coverage of the
+In addition to participating in the existing {\em QuarkNet}
+activities, the plan outlined in this proposal will extend the coverage of the
 outreach program at UB to engage the broader
 public in discussions of major results in particle
 physics, as well as to enliven particle physics for young students. 
@@ -746,9 +826,9 @@ jet substructure outlined above) by investigating possible
 parallelization of the algorithms for multicore, multithread, and
 possibly graphical processing unit usage. 
 
-In addition, Mr. Smith is obtaining a complete hands-on immersion at the
+In addition, Mr. Smith obtained a complete hands-on immersion at the
 Fermi National Accelerator Laboratory (FNAL) during the summer of
-2013. There, he is participating in testing of major electronics
+2013. There, he participated in testing of major electronics
 modules for the forward pixel (FPIX) upgrade at CMS. This kind of
 experience is invaluable in the field of young researchers, and it is also
 planned to continue supporting undergraduate students in such hands-on
@@ -903,14 +983,31 @@ Below is a year-by-year summary of the funding request.
 
 In the first year, Dr. Dolen will perform studies of the
 boosted-top analyses at CMS to ensure that they will be
-deployable in a very early timescale in Run 2. In addition, he is
-responsible for testing and commissioning of the FPIX
+deployable in a very early timescale in Run 2. 
+
+It is expected that the current
+detectors will be reinserted and incorporated in global commissioning
+runs collecting cosmic-ray data, followed by collision data early in 2015
+for the start of Run 2. The cosmic data can be used to investigate the
+particle-flow algorithm reconstruction by Mr. Kaisen, as well as to
+begin deployment of the DQM program by Ms. Alyari. The early collision
+data will provide the necessary information for any further
+tuning. 
+
+The searches outlined above will be of high interest early in Run 2,
+and much of the analysis work will be in preparation for the Run 2
+startup. These are expected to be designated ``High Priority
+Analyses'' (HPA's) for CMS, which means they are expected to be
+sensitive immediately. 
+
+In addition, Dr. Dolen is
+responsible for testing and commissioning of the FPIX HDI
 modules while stationed at Fermilab. 
 
 Mr. Kaisen will continue his work on adapting the particle-flow
 algorithm to work in the upgraded detector geometries in the Phase 1
 and Phase 2 upgrades of CMS. He is expected to finish his classes in
-the Spring Semester, 2014, and will move to Fermilab for 1-2 years,
+the Spring Semester, 2014, and will move to Fermilab for 1 year,
 after which time he will move to CERN. At Fermilab he will partake in
 further testing and commissioning of the FPIX modules. 
 
@@ -922,40 +1019,32 @@ remainder of her graduate studies.
 
 
 
+
+Since this is the year that the LHC startup will occur, 
+the first public outreach event will be presented. 
+
+
+
 \bigskip
 \bigskip
 {\bf \Large Year Two (1-June-2015 -- 31-May-2016)}
 \bigskip
 
 
-In year two of this proposal, it is expected that the current
-detectors will be reinserted and incorporated in global commissioning
-runs collecting cosmic-ray data, followed by collision data later in the
-year for the start of Run 2. The cosmic data can be used to investigate the
-particle-flow algorithm reconstruction by Mr. Kaisen, as well as to
-begin deployment of the DQM program by Ms. Alyari. The early collision
-data will provide the necessary information for any further
-tuning. Since this is a period of high activity, it
+Since the LHC Run 2 is expected to be in operation during the second
+year of this proposal, it is a period of high activity. Thus, it
 will be necessary to have a high presence of the group at CERN, and
 as such, it is expected that Dr. Dolen and
-Mr. Kaisen will have relocated there to partake in commissioning
-activities and in operations for the FPIX detector. 
+Mr. Kaisen will relocate there to partake in commissioning
+activities and in operations for the FPIX detector, as well as to be
+extremely plugged into the BSM searches that will be of high interest
+at the time.
 Ms. Alyari will be located at FNAL during this period. At FNAL, it is
 expected that she will contribute heavily via the {\em Remote
-  Operations Center} (ROC) at FNAL in the jet DQM.
+  Operations Center} (ROC) at FNAL in the jet DQM, as well as to
+participate in the aforementioned BSM searches. 
 
-The direction of the boosted algorithm studies should be guided by the
-ground work done by Dr. Dolen and Prof. Rappoccio in year one of the proposal. 
-The focus of year two should be guided by a timely deployment of these
-solutions into the CMS reconstruction and DQM to ensure that
-detailed simulation productions at CMS will include them for
-widespread use, as well as a first look at the collision data during
-Run 2. The vastly increased parton
-luminosity at high-$x$ will mean that striking BSM signatures could be
-seen very early. 
 
-Since this is the year that the LHC startup will occur, 
-the first public outreach event will be presented. 
 
 \bigskip
 \bigskip
@@ -964,21 +1053,20 @@ the first public outreach event will be presented.
 
 
 It is expected that the Run 2 LHC will be fully
-operational in year three of this proposal, and readily collecting
-collision data for physics analysis. Dolen and Kaisen will be fully
-engaged in the pixel commissioning as well as data analysis. Alyari
-will be performing DQM support and shifts.
-
-As the data are collected, it will be absolutely imperative to have
-the boosted-jet algorithms deployed and characterized as well as
-possible to be able to perform BSM searches immediately to see any new
-discoveries as quickly as possible. The particle flow algorithm should
-be fully commissioned, and the jet DQM will be in a ``production''
-mode. 
-
+operational at nominal luminosity in year three of this proposal, and
+will have collected a large fraction of the expected Run 2
+collision data for physics analysis. 
 It is also expected that between years three and four, Run 2
 will end, and part of the Phase 1 upgrades of the CMS detector will be
-implemented. This will require further tuning and monitoring of the PF
+implemented. 
+Dolen and Kaisen will be fully
+engaged in the pixel operation and Phase 1 upgrade preparations, as
+well as data analysis. Alyari will be performing DQM support and
+shifts, as well as data analysis. 
+
+
+In addition to the Phase 1 upgrade commissioning, there will be a need
+to further tune the PF
 algorithm and the jet reconstruction software to handle the newest
 detector, and to be ready for startup again for Run 3. The work of
 Mr. Kaisen and Ms. Alyari will be imperative to the successful usage
